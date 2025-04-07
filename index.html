@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GeoFrank</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <banner>
+      <div class="carrusel" style="margin: 0%;">
+        <div class="deslizador">
+          <div class="slide">
+            <img
+              src="https://educacion.mma.gob.cl/wp-content/uploads/2019/06/arbol-600x334.jpg"
+              alt="Imagen 1"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://mediosur.com/wp-content/uploads/2022/02/haiman-el-troudi-educacion-ambiental-clave-ante-crisis-climatica-1024x536-1.jpg"
+              alt="Imagen 2"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://geoinnova.org/wp-content/uploads/2021/08/learning-1782430_1280-1024x671.jpg"
+              alt="Imagen 3"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="botones">
+        <button onclick="moverSlide(-1)">Anterior</button>
+        <button onclick="moverSlide(1)">Siguiente</button>
+      </div>
+      <script>
+        let slideActual = 0;
+        const slides = document.querySelectorAll(".slide");
+        const totalSlides = slides.length;
+        const deslizador = document.querySelector(".deslizador");
+
+        function moverSlide(direccion) {
+          slideActual += direccion;
+
+          if (slideActual < 0) {
+            slideActual = totalSlides - 1;
+          } else if (slideActual >= totalSlides) {
+            slideActual = 0;
+          }
+
+          deslizador.style.transform = `translateX(-${slideActual * 100}%)`;
+        }
+
+        
+        setInterval(() => moverSlide(1), 3000);
+      </script>
+      </banner>
+      <section id="titulo">
+        <h1>GeoFrank</h1>
+        <h2 style="font-weight: 200; font-size: 40px; margin-top: 10px">
+          ¿Qué es un ecosistema?
+        </h2>
+        <p style="font-size: 20px">
+          Un ecosistema es un sistema que está formado por un conjunto de
+          organismos, el hábitat en el que viven y las relaciones que se
+          establecen entre ellos. Las especies de seres vivos que habitan un
+          ecosistema interactúan entre sí y con el medio, determinando los
+          flujos de energía y de materia que ocurren en ese ambiente.
+        </p>
+      </section>
+      <section id="Acuaticos">
+        <h2>Ecosistemas Acuaticos</h2>
+        <p>
+          Se caracterizan por la presencia de agua como componente principal y
+          son el tipo más abundante en el planeta: constituyen casi el 75 % de
+          todos los ecosistemas conocidos. En este grupo, se incluyen los
+          ecosistemas de los océanos y los de las aguas continentales dulces o
+          saladas, como ríos, lagos y lagunas.
+        </p>
+        <img
+          src="https://static.nationalgeographic.es/files/styles/image_3200/public/coral-reefs-2728211.webp?w=1600&h=900"
+          alt=""
+          style="width: 100%" 
+        />
+      </section>
+      <section id="Terrestres">
+        <h2>Ecosistemas Terrestres</h2>
+        <p>
+          Tienen lugar sobre la corteza terrestre y fuera del agua, en diversos
+          tipos de relieve: montañas, planicies, valles y llanuras. Existen
+          entre ellos diferencias importantes de temperatura, concentración de
+          oxígeno, suelos y humedad, por lo que la biodiversidad de estos
+          ecosistemas es grande y variada. Algunos ejemplos de este grupo son
+          los bosques, los matorrales, las estepas y los desiertos.
+        </p>
+        <img src="https://concepto.de/wp-content/uploads/2018/10/ecosistema-terrestre2-e1538411437472.jpg">
+        <section id="mixtos ">
+          <h2>Ecosistemas mixtos</h2>
+          
+
+
+
+
+
+
+
+
+        </section>
+        
+    </main>
+  </body>
+</html>
