@@ -1,55 +1,70 @@
 header{ 
+    display: flex;
     background-color: #45d93e;
     width:100% ;
-    height: 10vh;
     border: 0%;
+    justify-content: center;
 }
 body{
     background-color: #a6ff8d;
     margin: 0%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-}
-#banner{
-    height: vh
-}
 .carrusel{
-     
-        width: 80%;
-        max-width: 600px;
-        margin: auto;
-        overflow: hidden;
-        position: relative;
-    }
-    
-    .deslizador {
-        display: flex;
-        transition: transform 0.5s ease;
-    }
-    
-    .slide {
-        min-width: 100%;
-    }
-    .slide img {
-        width: 100%;
-        display: block;
-        padding: 20%;
-         
-    }
-    
-    .botones {
-        text-align: center;
-        margin-top: 10px;
-    }
-    
-    button {
-        padding: 8px 16px;
-        margin: 0 5px;
-        cursor: pointer;
-    }
+    display: flex;
+    flex-direction: row;
+    width: 300vw;
+    margin-top: 20px;
+}
 
-    h1{
-   font-size: 80px;
-   color: #1b611a;
-   text-align: center;
+.carrusel img{
+    width: 100vw;
+    height: 50vh;
+    object-fit: cover;
+    animation: carrusel 20s infinite 2s;
+}
+@keyframes carrusel{
+    0%{
+        transform: translateX(0);
+    }
+    40%{
+        transform: translateX(-100vw);
+    }
+    80%{
+        transform: translateX(-200vw);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+ul li{
+    display: inline-block;
+    margin: 0 5px;
+    list-style: none;
+    text-decoration: none;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+
+
+   /*<h2 style="font-weight: 200; font-size: 40px; margin-top: 10px">*/
+   /*<p style="font-size: 20px">*/
+
+
+h1{
+    font-size: 80px;
+    color: #1b611a;
+    text-align: end;
 }
