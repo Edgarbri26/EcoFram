@@ -1,3 +1,5 @@
+
+
 header{ 
     display: flex;
     background-color: #45d93e;
@@ -10,6 +12,20 @@ body{
     margin: 0%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
+    /*para ocultar el*/
+    overflow-x: hidden;
+}
+
+.carrusel-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100vw;
+    height: 50vh;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .carrusel{
@@ -17,6 +33,16 @@ body{
     flex-direction: row;
     width: 300vw;
     margin-top: 20px;
+}
+
+img{
+    width: 100vw;
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    padding: 0;
 }
 
 .carrusel img{
@@ -94,9 +120,8 @@ path:hover{
     cursor: pointer;
 }
 
-
 /*cosas del contacto*/
-form{
+.contacto-form{
     background-color: #1b611a;
     position: absolute;
     color: rgb(0, 0, 0);
@@ -144,4 +169,65 @@ form button{
     font-weight: 500;
     cursor: pointer;
     transition: background-color 0.3s ease;
+}
+
+/*test*/
+.test-formt{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+
+    /*para centrar*/
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.test-formt label{
+    font-size: 20px;
+    color: #1b611a;
+    text-align: center;
+    font-weight: 400;
+}
+.test-formt input{
+    height: 30px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 1px solid #45d93e;
+    font-size: 16px;
+    font-weight: 200;
+
+
+}
+.test-formt button{
+    background-color: #45d93e;
+    color: #fff;
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.test-formt button:hover{
+    background-color: #1b611a;
+    cursor: pointer;
+}
+.test-formt p{
+    font-size: 20px;
+    color: #1b611a;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-weight: 200;
 }
