@@ -1,38 +1,42 @@
-<form action="#" method="post">
-    <label for="" class="label-contacto">Contacto</label>
-    <!-- Nombre-->
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre" required>
-    <!-- Email-->
-    <label for="email">Correo Electrónico:</label>
-    <input type="text" id="email" name="email" required>
-    <!-- telefono-->
-    <label for="telefono">telefono:</label>
-    <input type="tel" id="telefono" name="telefono" required>
-    <!-- Telefono segundario-->
-    <label for="telefono">telefono segundario:</label>
-    <input type="tel" id="telefono2" name="telefono2">
-    <!-- boton enviar-->
-    <button type="submit">Enviar</button>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>GeoFrank</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="mapa.html">mapa</a></li>
+                <li><a href="test.html">juego</a></li>
+                <li><a href="contacto.html">contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-form{
-    position: absolute;
-    color: burlywood;
-    backdrop-filter: blur(10px);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 200px;
-    height: 350px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
+    <h1>Contacto</h1>
+
+    <form action="#" method="post">
+        <!-- Nombre-->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <!-- Email-->
+        <label for="email">Correo Electrónico:</label>
+        <input type="text" id="email" name="email" required>
+        <!-- telefono-->
+        <label for="telefono">telefono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+        <!-- Telefono segundario-->
+        <label for="telefono">telefono segundario:</label>
+        <input type="tel" id="telefono2" name="telefono2">
+        <!-- boton enviar-->
+        <button type="submit">Enviar</button>
+    </form>
+    
+
+</body>
+</html>

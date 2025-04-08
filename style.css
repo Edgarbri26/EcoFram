@@ -9,6 +9,7 @@ body{
     background-color: #a6ff8d;
     margin: 0%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 .carrusel{
@@ -57,14 +58,90 @@ ul li a{
     margin-top: 10px;
 }
 
+h2{
+    font-size: 40px;
+    color: #1b611a;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 200;
+}
 
-
-   /*<h2 style="font-weight: 200; font-size: 40px; margin-top: 10px">*/
-   /*<p style="font-size: 20px">*/
-
+p{
+    font-size: 20px;
+    color: #114210;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 200;
+}
 
 h1{
     font-size: 80px;
     color: #1b611a;
-    text-align: end;
+    text-align: center;
+}
+
+
+/*cosas del mapa*/
+path{
+    fill: #45d93e;
+    stroke: #000;
+    stroke-width: 1px;
+    transition: fill 0.3s ease, stroke 0.3s ease;
+}
+path:hover{
+    fill: #1b611a;
+    stroke: #000;
+    cursor: pointer;
+}
+
+
+/*cosas del contacto*/
+form{
+    background-color: #1b611a;
+    position: absolute;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    /*para centrar*/
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+form label{
+    font-size: 20px;
+    color: #45d93e;
+    text-align: center;
+    font-weight: 400;
+}
+form input{
+    height: 30px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 1px solid #45d93e;
+    font-size: 16px;
+    font-weight: 200;
+}
+form button{
+    background-color: #45d93e;
+    color: #fff;
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
