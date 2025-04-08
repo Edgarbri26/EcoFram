@@ -27,30 +27,15 @@ body{
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 .carrusel{
     display: flex;
     flex-direction: row;
+    overflow: hidden;
     width: 300vw;
     margin-top: 20px;
-}
-
-img{
-    width: 100vw;
-    height: 50vh;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 0;
-    padding: 0;
-}
-
-.carrusel img{
-    width: 100vw;
-    height: 50vh;
-    object-fit: cover;
     animation: carrusel 20s infinite 2s;
 }
+/*animacion para el movimieto del carrucel*/
 @keyframes carrusel{
     0%{
         transform: translateX(0);
@@ -65,6 +50,22 @@ img{
         transform: translateX(0);
     }
 }
+
+img{
+    width: 100vw;
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    padding: 0;
+}
+.carrusel img{
+    width: 100vw;
+    height: 50vh;
+    object-fit: cover;
+}
+
 
 ul li{
     display: inline-block;
@@ -104,7 +105,21 @@ h1{
     font-size: 80px;
     color: #1b611a;
     text-align: center;
+    animation: aparecer 2s ease-out forwards;
+
 }
+/*animacion para aparecer*/
+@keyframes aparecer {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 
 
 /*cosas del mapa*/
